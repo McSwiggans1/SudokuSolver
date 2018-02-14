@@ -1,26 +1,6 @@
 import java.util.*;
 
 public class Main {
-    /**
-     * Reads Sudoku Puzzle from STDIN in the following format.
-     * First number, should be N, which is the value for this board configuration N^2 * N^2 = N^4 size board
-     * Prints answer to STDOUT
-     * <p/>
-     * 3
-     * 4 0 0 0 0 0 0 0 5
-     * 0 0 9 4 0 2 8 0 0
-     * 0 6 0 0 5 0 0 9 0
-     * 0 3 0 0 8 0 0 2 0
-     * 0 0 2 5 0 1 3 0 0
-     * 0 9 0 0 4 0 0 7 0
-     * 0 1 0 0 6 0 0 5 0
-     * 0 0 8 1 0 5 9 0 0
-     * 5 0 0 0 0 0 0 0 7
-     * <p/>
-     * ZEROS represent values that need to be found
-     *
-     * @param args
-     */
     public static void main(String[] args) {
         int[][] answer = new int[][] {{5,3,4,6,7,8,9,1,2},
                                                {6,7,2,1,9,5,3,4,8},
@@ -43,7 +23,7 @@ public class Main {
                                        {0,0,6,0,3,0,2,0,0}};
         ;
                                       
-        System.out.println("Puzzle Solved, here is the solution: ");
+        System.out.println("Puzzle Before: ");
         System.out.println();
         for (int i = 0; i < puzzle1.length; i++) {
             for(int j = 0; j < puzzle1.length; j++){
@@ -62,7 +42,7 @@ public class Main {
         
         
         
-        System.out.println("Puzzle Solved, here is the solution: ");
+        System.out.println("Puzzle After: ");
         System.out.println();
         for (int i = 0; i < puzzle1.length; i++) {
             for(int j = 0; j < puzzle1.length; j++){
